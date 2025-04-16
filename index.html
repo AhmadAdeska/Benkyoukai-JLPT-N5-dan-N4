@@ -22,7 +22,7 @@
       width: 120px;
       height: 120px;
       border-radius: 50%;
-      margin-top: 40px;
+      margin-top: 10px;
       border: 4px solid white;
     }
 
@@ -54,20 +54,77 @@
     .button:hover {
       background-color: rgba(255, 255, 255, 0.25);
     }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 30px;
+      max-width: 900px;
+    }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 20px;
+      width: 250px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+
+    .card p {
+      font-size: 0.9em;
+      margin: 5px 0;
+    }
   </style>
 </head>
 <body>
-<!--   <img class="profile-img" src="https://ugc.production.linktr.ee/74b97127-b07d-4d79-9a4d-798fd09b17a2_WhatsApp-Image-2025-04-09-at-15.04.34-b1ea5fe5.jpeg?io=true&size=avatar-v3_0" alt="Foto Profil"> -->
 
   <h1>Mentor Benkyoukai JLPT N5 dan N4</h1>
-<!--   <p class="tagline">"Ada penjelasan kenapa jawaban salah dan benar di akhir setelah submit. Jika masih tidak paham diskusikan di grup"</p> -->
   <p class="tagline">"Tidak perlu terburu-buru, Tapi jangan berhenti"</p>
+
+  <h2>Profil Mentor</h2>
+  <div class="card-container">
+
+    <div class="card">
+      <img src="https://via.placeholder.com/120" class="profile-img" alt="Mentor 1">
+      <h3>Mentor 1</h3>
+      <p>JLPT N2</p>
+      <p>Awardee Program Magang</p>
+      <p>Osaka, Jepang</p>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/120" class="profile-img" alt="Mentor 2">
+      <h3>Mentor 2</h3>
+      <p>JLPT N1</p>
+      <p>Awardee Program Magang</p>
+      <p>Tokyo, Jepang</p>
+    </div>
+
+    <div class="card">
+      <img src="https://via.placeholder.com/120" class="profile-img" alt="Mentor 3">
+      <h3>Mentor 3</h3>
+      <p>JLPT N2</p>
+      <p>Awardee Program Magang</p>
+      <p>Fukuoka, Jepang</p>
+    </div>
+
+  </div>
 
   <a class="button" href="https://forms.gle/6AWbVzwLxMCK8pYn7" target="_blank">Daftar Benkyoukai JLPT N5</a>
   <a class="button" href="https://forms.gle/1QgmgxRrwfc5ePkm6" target="_blank">Daftar Benkyoukai JLPT N4</a>
-  <!-- 
-  <a class="button" href="https://forms.gle/kdJwktVUq2Tq5Fca7" target="_blank">Latihan Soal 31 - 35</a>
-  <a class="button" href="https://quizlet.com/jp/1026367422/goi-jlpt-n3-juli-2024-flash-cards/?i=26aaqn&x=1jqt" target="_blank">List Kata Pada Latihan diatas</a>
-  -->
+
 </body>
 </html>
